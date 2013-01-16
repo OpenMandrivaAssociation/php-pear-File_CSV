@@ -1,8 +1,6 @@
 %define		_class		File
 %define		upstream_name	%{_class}_CSV
 
-%define		_requires_exceptions pear(PHPUnit.php)
-
 Summary:	Read and write of CSV files
 Name:		php-pear-%{upstream_name}
 Version:	1.0.0
