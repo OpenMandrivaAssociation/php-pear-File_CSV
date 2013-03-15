@@ -4,7 +4,7 @@
 Summary:	Read and write of CSV files
 Name:		php-pear-%{upstream_name}
 Version:	1.0.0
-Release:	%mkrel 3
+Release:	5
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/File_CSV/
@@ -15,7 +15,6 @@ Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	php-pear
 Conflicts:	php-pear-File < 1.4.0
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Read and write of CSV files as well as discovering the format the CSV file is
@@ -31,7 +30,6 @@ For more information on CSV: http://rfc.net/rfc4180.html
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -44,7 +42,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
