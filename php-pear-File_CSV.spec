@@ -4,7 +4,7 @@
 Summary:	Read and write of CSV files
 Name:		php-pear-%{upstream_name}
 Version:	1.0.0
-Release:	5
+Release:	6
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/File_CSV/
