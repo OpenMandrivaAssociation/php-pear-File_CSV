@@ -7,7 +7,7 @@ Version:	1.0.0
 Release:	14
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/File_CSV/
+Url:		https://pear.php.net/package/File_CSV/
 Source0:	http://download.pear.php.net/package/%{modname}-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
